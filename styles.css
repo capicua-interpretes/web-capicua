@@ -248,7 +248,6 @@ body {
   display: inline-block;
   background: #2badba;
   color: #fff;
-  border: none;
   border-radius: 2px;
   padding: 0.7em 5em;
   font-size: 1em;
@@ -260,13 +259,11 @@ body {
 .button:hover,
 .cta-link:hover {
   background: #228a8a;
-}
-
-.blue-link {
-  color: #2badba;
+  color: #fff;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
+}
+.button {
+  margin-top: 1em;
 }
 
 /* ---   LINKS SECTION & CARDS   --- */
@@ -710,6 +707,10 @@ body {
 .cta-section .button {
   color: #fff;
   text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2em;
 }
 
 /* ---   FAQ SECTION   --- */
