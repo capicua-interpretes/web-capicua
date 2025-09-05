@@ -54,7 +54,7 @@
       <p class="hero-desc">—Es un capicuac, la mascota de </p>
       <h1 class="hero-title">CAPICUA</h1>
       <p class="hero-desc">¿La conoces?</p>
-      <a href="#" class="button" style="margin-top:1em;">Saber más</a>
+      <a href="#" class="button">Saber más</a>
       </div>
       <div class="hero-image">
         <img src="images/hero.png" />
@@ -143,7 +143,7 @@
       <div class="figures-row">
         <div class="figure-col">
             <span class="figure-number">200+</span>
-          <p>Miembros activos</p>
+          <p>Miembros</p>
         </div>
         <div class="figure-col">
             <span class="figure-number">10</span>
@@ -224,10 +224,9 @@
     panel.classList.toggle('open');
     toggle.textContent = panel.classList.contains('open') ? '−' : '+';
   }
-
   function toggleNav() {
-    const navbar = document.getElementById("navbar");
-    navbar.classList.toggle("responsive");
+    const nav = document.getElementById("navbar");
+    nav.classList.toggle("responsive");
   }
 </script>
 </body>
