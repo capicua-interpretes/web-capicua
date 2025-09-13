@@ -26,6 +26,11 @@ a:hover {
 }
 
 /* ---   LAYOUT & BODY   --- */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 body {
   background: #f7f7f7;
   font-family: 'Barlow', sans-serif;
@@ -439,7 +444,7 @@ body {
   flex-direction: row;
   gap: 16px; 
   flex-wrap: nowrap; 
-  overflow-x: auto;
+  overflow-x: hidden;
   padding: 1em 0;
 }
 
@@ -449,7 +454,7 @@ body {
   width: 300px;
   min-width: 280px;
   border: 1px solid #2badba;
-  border-radius: 2PX;
+  border-radius: 2px;
   overflow: hidden;
 }
 
@@ -889,6 +894,7 @@ body {
     order: 1;
     text-align: center;
     margin-bottom: 0;
+    margin-top: 1em;
   }
 
   .hero-image img {
@@ -1144,4 +1150,17 @@ body {
     transform: scale(1.05);
     opacity: 1;
   }
+}
+
+/* Estado inicial de las tarjetas */
+.agenda-card {
+  opacity: 0;
+  transform: translateX(70px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Estado final (cuando se activa la animación) */
+.agenda-card.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
