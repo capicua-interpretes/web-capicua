@@ -50,44 +50,65 @@
   <main class="contenido">
     <section class="hero">
       <div class="hero-message">
-      <p class="hero-desc">—¿Pero qué hace un pato en cabina?</p>
-      <p class="hero-desc">—Es un capicuac, la mascota de </p>
-      <h1 class="hero-title">CAPICUA</h1>
-      <p class="hero-desc">¿La conoces?</p>
-      <a href="#" class="button">Saber más</a>
+  <p class="hero-desc"><span class="typewriter" id="typewriter1"></span></p>
+  <p class="hero-desc"><span class="typewriter" id="typewriter2"></span></p>
+  <h1 class="hero-title"><span class="typewriter" id="typewriter3"></span></h1>
+  <p class="hero-desc"><span class="typewriter" id="typewriter4"></span></p>
+  <a href="#" class="button" id="hero-btn" style="opacity:0; pointer-events:none;">Saber más</a>
       </div>
       <div class="hero-image">
-        <img src="images/hero.png" />
+  <img src="images/hero.png" id="hero-img" style="opacity:0; pointer-events:none;" />
       </div>
     </section>
-    
-    <section class="links-section">
-      <h2>Qué hacemos</h2>
-      <p><span class="barlow-light">(Además de lanzar patos de goma)</span></p>
+    <section class="about-section animate-on-scroll">
+      <div class="about-container">
+        <h2>Quiénes somos</h2>
+        <p class="about-desc">CAPICUA intérpretes es una comunidad dedicada a la formación, práctica y apoyo entre intérpretes de conferencias. Nuestra misión es fomentar la colaboración, el aprendizaje y el crecimiento profesional en un entorno abierto y solidario. Descubre quiénes somos, cómo trabajamos y por qué creemos que juntas llegamos más lejos.</p>
+      </div>
+    </section>
+    <section class="figures-section animate-on-scroll">
+      <div class="figures-row">
+        <div class="figure-col">
+            <span class="figure-number" id="figure-num-1">0</span>
+          <p>Miembros</p>
+        </div>
+        <div class="figure-col">
+            <span class="figure-number" id="figure-num-2">0</span>
+          <p>Universidades</p>
+        </div>
+        <div class="figure-col">
+            <span class="figure-number" id="figure-num-3">0</span>
+          <p>Países</p>
+        </div>
+      </div>
+    </section>    
+    <section class="links-section animate-on-scroll">
+  <h2>Qué hacemos</h2>
+  <p><span class="barlow-light">(Además de lanzar patos de goma)</span></p>
       <div class="links-images">
         <a href="#" class="link-card">
           <div class="card-image">
-            <img src="images/link1.png" class="card-img"/>
-            <span class="card-text card-overlay">Prácticas</span>
+            <img src="images/link1.png" class="card-img link-img" id="link-img-1" />
+            <span class="card-text card-overlay link-label" id="link-label-1">Prácticas</span>
           </div>
         </a>
         <a href="#" class="link-card">
           <div class="card-image">
-            <img src="images/link2.png" class="card-img"/>
-            <span class="card-text card-overlay">Talleres</span>
+            <img src="images/link2.png" class="card-img link-img" id="link-img-2" />
+            <span class="card-text card-overlay link-label" id="link-label-2">Talleres</span>
           </div>
         </a>
         <a href="#" class="link-card">
           <div class="card-image">
-            <img src="images/link3.png" class="card-img"/>
-            <span class="card-text card-overlay">Actividades</span>
+            <img src="images/link3.png" class="card-img link-img" id="link-img-3" />
+            <span class="card-text card-overlay link-label" id="link-label-3">Actividades</span>
           </div>
         </a>
       </div>
     </section>
     </section>
   
-    <section class="agenda-section">
+    <section class="agenda-section animate-on-scroll">
       <div class="agenda-flex">
         <div class="agenda-header">
           <h2>Agenda</h2>
@@ -136,48 +157,13 @@
         </div>
       </div>
     </section>
-    <section class="full-message">
-      <p class="full-message-text">Sola no puedes. <br />Con amigas, sí.</p>
-    </section>
-    <section class="figures-section">
-      <div class="figures-row">
-        <div class="figure-col">
-            <span class="figure-number">200+</span>
-          <p>Miembros</p>
-        </div>
-        <div class="figure-col">
-            <span class="figure-number">10</span>
-          <p>Universidades</p>
-        </div>
-        <div class="figure-col">
-            <span class="figure-number">4</span>
-          <p>Países</p>
-        </div>
-      </div>
-    </section>
-    <section class="sentences-section">
-  <div class="sentences-level sentences-left">
-    <div class="speech-bubble" style="position:relative;">
-      <p>¿Y todo esto gratis?</p>
-      <div class="speech-bubble-tail-left"></div>
-    </div>
-  </div>
-  <div class="sentences-level sentences-right">
-    <div class="speech-bubble" style="position:relative;">
-      <p>Ven, que te cuento <a href="#">cómo funciona</a></p>
-      <div class="speech-bubble-tail-right"></div>
-    </div>
-  </div>
-    </section>
-    <section class="cta-section">
-      <div class="cta1">
-        <p> ¿Lo has leído todo con voz de anuncio? Eres de las nuestras.</p>
-      </div>
-      <h2>¿Te animas?</h2>
-  <a href="#" class="button">¡Me apunto!</a>
+    <section class="cta-section animate-on-scroll">
+  <div class="cta-container">
+  <h2><span class="typewriter" id="typewriter-cta"></span></h2>
+    <a href="#" class="button">¡Me apunto!</a>
   </div>
  </section>
- <section class="faq-section">
+ <section class="faq-section animate-on-scroll">
     <h2>Dudas frecuentes</h2>
     <div class="faq-container">
       <p>Nos suelen hacer muchas preguntas. Muchas. Así que hemos recogido a continuación las más habituales. Si aun así te quedas con ganas de más puedes acceder a la <a href="#">capiguía completa</a>.</p>
@@ -217,17 +203,149 @@
   </div>
 </footer>
 <script>
-  function togglePanel(btn) {
-    const panel = btn.parentElement.querySelector('.faq-answer');
-    const toggle = btn.querySelector('.faq-toggle');
-
-    panel.classList.toggle('open');
-    toggle.textContent = panel.classList.contains('open') ? '−' : '+';
-  }
+// Navbar
   function toggleNav() {
     const nav = document.getElementById("navbar");
     nav.classList.toggle("responsive");
   }
+// FAQ
+  function togglePanel(btn) {
+    const panel = btn.parentElement.querySelector('.faq-answer');
+    const toggle = btn.querySelector('.faq-toggle');
+    panel.classList.toggle('open');
+    toggle.textContent = panel.classList.contains('open') ? '−' : '+';
+  }
+// Animación general animate-on-scroll
+const scrollAnimatedElements = document.querySelectorAll('.animate-on-scroll');
+
+const animationObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      animationObserver.unobserve(entry.target); // Para que solo se anime una vez
+    }
+  });
+}, { threshold: 0.3 });
+
+scrollAnimatedElements.forEach(el => {
+  animationObserver.observe(el);
+});
+
+  // Wait until DOM is ready
+  document.addEventListener("DOMContentLoaded", function () {
+    // Hero image and typewriter
+    const heroImg = document.getElementById("hero-img");
+    heroImg.style.opacity = "1";
+    heroImg.style.pointerEvents = "auto";
+    heroImg.classList.add("pop-in");
+
+    // Typewriter utility
+    function typeLine(text, el, speed, callback) {
+      let i = 0;
+      el.textContent = "";
+      el.classList.add("typewriter-cursor");
+      function typeChar() {
+        if (i < text.length) {
+          el.textContent += text.charAt(i);
+          i++;
+          setTimeout(typeChar, speed);
+        } else {
+          el.classList.remove("typewriter-cursor");
+          if (callback) callback();
+        }
+      }
+      typeChar();
+    }
+
+    // Start typewriter for hero after image
+    setTimeout(function () {
+      const lines = [
+        "—¿Pero qué hace un pato en cabina?",
+        "—Es un capicuac, la mascota de ",
+        "CAPICUA",
+        "¿La conoces?"
+      ];
+      const ids = ["typewriter1", "typewriter2", "typewriter3", "typewriter4"];
+      let line = 0;
+
+      function typeAllLines() {
+        if (line < lines.length) {
+          typeLine(lines[line], document.getElementById(ids[line]), 45, function () {
+            line++;
+            typeAllLines();
+          });
+        } else {
+          const btn = document.getElementById("hero-btn");
+          btn.style.opacity = "1";
+          btn.style.pointerEvents = "auto";
+          btn.classList.add("pop-in");
+        }
+      }
+
+      typeAllLines();
+    }, 500);
+
+    // Count up utility
+    function countUp(el, end, duration, suffix) {
+      if (!el) return;
+      let start = 0;
+      let range = end - start;
+      let minTimer = 30;
+      let stepTime = Math.max(Math.floor(duration / range), minTimer);
+      let current = start;
+      let timer = setInterval(function () {
+        current++;
+        el.textContent = current + (suffix || '');
+        if (current >= end) {
+          clearInterval(timer);
+          el.textContent = end + (suffix || '');
+        }
+      }, stepTime);
+    }
+
+    // CTA
+const cta = document.getElementById('typewriter-cta');
+let ctaAnimated = false;
+
+if (cta) {
+  const ctaObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !ctaAnimated) {
+        ctaAnimated = true;
+        typeLine('Sola no puedes. Con amigas, sí.', cta, 45);
+        ctaObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  ctaObserver.observe(cta);
+}
+    // Scroll-triggered animations
+    const linksSection = document.querySelector('.links-section');
+    const figuresSection = document.querySelector('.figures-section');
+    let linksAnimated = false;
+    let figuresAnimated = false;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          if (entry.target === linksSection && !linksAnimated) {
+            linksAnimated = true;
+             }
+
+          if (entry.target === figuresSection && !figuresAnimated) {
+            figuresAnimated = true;
+            countUp(document.getElementById('figure-num-1'), 200, 1200, '+');
+            countUp(document.getElementById('figure-num-2'), 10, 900);
+            countUp(document.getElementById('figure-num-3'), 4, 700);
+          }
+        }
+      });
+    }, { threshold: 0.4 });
+
+    if (linksSection) observer.observe(linksSection);
+    if (figuresSection) observer.observe(figuresSection);
+  });
 </script>
 </body>
 </html>
