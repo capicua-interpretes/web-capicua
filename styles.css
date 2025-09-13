@@ -1144,14 +1144,12 @@ body {
   }
 }
 
-/* Estado inicial de las tarjetas */
 .agenda-card {
   opacity: 0;
   transform: translateX(70px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* Estado final (cuando se activa la animación) */
 .agenda-card.visible {
   opacity: 1;
   transform: translateX(0);
