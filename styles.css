@@ -914,6 +914,20 @@ body {
     max-width: 100%;
     width: 100%;
   }
+ .cta-section h2 {
+    font-size: 1.8em;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-align: center;  
+  }
+
+  .cta-section {
+    padding-left: 3vw;
+    padding-right: 3vw;
+    background-attachment: scroll; 
+  }
+
   .footer {
     font-size: 0.9em;
     padding: 2em 0 0 0;
@@ -1101,7 +1115,7 @@ body {
 .typewriter {
   display: inline-block;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: normal;
   font-family: inherit;
 }
 
