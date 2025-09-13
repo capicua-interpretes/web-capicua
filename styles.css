@@ -894,7 +894,7 @@ body {
   }
 
   .hero-image img {
-    max-width: 70%;
+    max-width: 90%;
     width: auto;
     height: auto;
     margin-right: 0;
@@ -1137,3 +1137,4 @@ body {
     opacity: 1;
   }
 }
+
