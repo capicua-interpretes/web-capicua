@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dudas frecuentes | CAPICUA</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+</head>
+<body>
+    <header>
+      <nav class="navbar" id="navbar">
+      <div class="nav-left">
+        <a href="/index.html" class="nav-home">
+          <img src="images/solido.svg" alt="Inicio"/>
+          <span class="nav-title">
+            <span class="nav-title-bold">CAPICUA</span><br />
+            <span class="nav-title-small">intérpretes</span>
+          </span>
+        </a>
+      </div>
+      <button class="nav-hamburger" onclick="toggleNav()" aria-label="Abrir menú">
+        <span class="nav-hamburger-bar"></span>
+        <span class="nav-hamburger-bar"></span>
+        <span class="nav-hamburger-bar"></span>
+      </button>
+      <ul class="nav-links nav-right">
+        <li class="dropdown">
+          <a href="#">Quiénes somos</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">La asociación</a></li>
+            <li><a href="#">El equipo</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Qué hacemos</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Prácticas</a></li>
+            <li><a href="#">Talleres</a></li>
+            <li><a href="#">Actividades</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Recursos</a></li>
+        <li><a href="faq.html">Dudas frecuentes</a></li>
+        <li><a href="#">Iniciar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido">
+    <h1>Dudas frecuentes</h1>
+    <div class="faq-container">
+      <p></p>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" onclick="togglePanel(this)">¿Qué es CAPICUA?<span class="faq-toggle">+</span></button>
+        <div class="faq-answer">CAPICUA son las siglas de la Comunidad de Aprendizaje y Práctica de Interpretación de Conferencias de Uso Abierto. Es una asociación sin ánimo de lucro fundada para fomentar la cooperación dentro del sector y el empoderamiento laboral, especialmente de cara a los recién egresados.</div>
+      </div>
+      <div class="faq-separator"></div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="togglePanel(this)">¿Cómo puedo inscribirme?<span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Solo debes rellenar el formulario de inscripción. Te escribiremos por correo electrónico lo antes posible para procesarla.</div>
+      </div>
+      <div class="faq-separator"></div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="togglePanel(this)">¿Hay que abonar alguna cuota?<span class="faq-toggle">+</span></button>
+        <div class="faq-answer">No. Tanto la inscripción como la participación en las actividades de CAPICUA son gratuitas.</div>
+      </div>
+      <div class="faq-separator"></div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="togglePanel(this)">¿Qué requisitos debo cumplir para poder inscribirme?<span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Estar en posesión de un título de Máster en Interpretación de Conferencias o similar; o haber cursado, al menos, 12 créditos ECTS de formación en interpretación de conferencias (será imprescindible que en los 12 créditos conste formación en interpretación simultánea); o haber realizado cursos de interpretación simultánea de, al menos, 100 horas; o justificar, al menos, 100 horas de trabajo en interpretación simultánea de conferencias; o haber aprobado algún examen de acreditación oficial para intérpretes.
+   </main>
+<script src="script.js"></script>
+</body>
+</html>
