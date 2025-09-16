@@ -1123,24 +1123,6 @@ main > section {
   from, to { border-color: transparent }
   50% { border-color: #2badba; }
 }
-.pop-in {
-  animation: popIn 0.5s cubic-bezier(.4,0,.2,1);
-}
-@keyframes popIn {
-  0% {
-    transform: scale(0.7);
-    opacity: 0;
-  }
-  80% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.05);
-    opacity: 1;
-  }
-}
-
 .agenda-card {
   opacity: 0;
   transform: translateX(70px);
@@ -1151,3 +1133,4 @@ main > section {
   opacity: 1;
   transform: translateX(0);
 }
+
