@@ -179,3 +179,27 @@ document.addEventListener("DOMContentLoaded", function () {
   if (figuresSection) sectionObserver.observe(figuresSection);
 
 });
+
+//FAQ
+document.querySelectorAll('.faq-sidebar a').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const category = this.dataset.category;
+
+      document.querySelectorAll('.faq-group').forEach(group => {
+        if (group.dataset.category === category) {
+          group.style.display = 'block';
+        } else {
+          group.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Mostrar todo al cargar por primera vez
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.faq-group').forEach(group => {
+      group.style.display = 'block';
+    });
+  });
