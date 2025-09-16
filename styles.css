@@ -21,7 +21,8 @@ h1 {
   font-family: 'DomaineDisplayBold', serif;
   font-size: 2.4em;
   font-weight: bold;
-  margin: 0.2em 0;
+  padding: 0.2em 0;
+  margin: 0;
   letter-spacing: 0.03em;
   position: relative;
   text-align: center;
@@ -43,7 +44,7 @@ html, body {
   overflow-x: hidden;
 }
 body {
-  background: #f7f7f7;
+  background: #f7fafc;
   font-family: 'Barlow', sans-serif;
   color: #464646;
   margin: 0;
@@ -52,10 +53,12 @@ body {
 }
 
 main > section {
-  padding-left: 6vw;
-  padding-right: 6vw;
+  padding-inline: 6vw;
 }
 
+.contenido {
+  background: linear-gradient(180deg, #edf2f7 0%, #f7fafc 100%);
+}
 
 /* ---   NAVIGATION BAR   --- */
 .navbar {
@@ -198,7 +201,7 @@ main > section {
   justify-content: space-between;
   padding-top: 3em;
   padding-bottom: 2em;
-  background: linear-gradient(180deg, #edf2f7 0%, #f7f7f7 100%);
+  background: linear-gradient(180deg, #edf2f7 0%, #f7fafc 100%);
 }
 .hero-message {
   flex: 1;
@@ -298,7 +301,7 @@ main > section {
 .links-images {
   display: flex;
   justify-content: center;
-  gap: 3em;
+  gap: 5em;
   flex-wrap: wrap;
 }
 .pop-in {
@@ -393,9 +396,8 @@ main > section {
 
 .agenda-section {
   background: #fff;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  margin-bottom: 2em;
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 
 .agenda-section h2 {
@@ -575,8 +577,7 @@ main > section {
 
 /* ---   FIGURES   --- */
 .figures-section {
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding: 6em 2em 6em 2em;
   background: #f7fafc;
 }
 
@@ -614,7 +615,7 @@ main > section {
 }
 
 .figure-number {
-  font-size: 3.1em;
+  font-size: 3.5em;
   font-weight: bold;
   color: #2badba;
   line-height: 1.1;
@@ -650,7 +651,7 @@ main > section {
 /* ---   FAQ SECTION   --- */
 .faq-section {
   background: #fff;
-  padding: 4em 6vw 2em 6vw;
+  padding: 4em 6vw 4em 6vw;
 }
 
 .faq-section h2 {
@@ -829,6 +830,80 @@ main > section {
   color: #e3e3e3;
   font-size: 0.7em;
   font-weight: 300;
+}
+
+/* ---   FORMULARIO   --- */
+.formulario {
+  background: linear-gradient(180deg, #edf2f7 0%, #f7f7f7 100%);
+}
+
+form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #007acc;
+  outline: none;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #007acc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #005ea6;
 }
 
 
@@ -1134,3 +1209,210 @@ main > section {
   transform: translateX(0);
 }
 
+/* ---   FORMULARIO   --- */
+.formulario {
+  background: linear-gradient(180deg, #edf2f7 0%, #f7f7f7 100%);
+}
+
+form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #007acc;
+  outline: none;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #007acc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #005ea6;
+}
+
+
+/*------FAQ PAGE------*/
+.faq-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+
+/* Contenedor principal de la página FAQ */
+.faq-page {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 1em;
+  gap: 2em;
+}
+
+/* ===== MENÚ LATERAL ===== */
+.faq-sidebar {
+  width: 220px;
+  position: sticky;
+  top: 2em;
+  align-self: flex-start;
+  padding-right: 1em;
+  height: fit-content;
+}
+
+.faq-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.faq-sidebar li {
+  margin-bottom: 0.75em;
+}
+
+.faq-sidebar a {
+  text-decoration: none;
+  color: #464646;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.faq-sidebar a:hover,
+.faq-sidebar a:focus {
+  color: #2badba;
+  font-weight: 500;
+}
+
+/* ===== CONTENIDO DE PREGUNTAS ===== */
+.faq-page .faq-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  max-width: 800px;
+  width: 100%;
+  margin-top: 0;
+}
+
+/* Cada pregunta */
+.faq-item {
+  position: relative;
+  padding-bottom: 0.5em;
+}
+
+/* Separador entre preguntas */
+.faq-separator {
+  width: 100%;
+  height: 1px;
+  background: #c6c6c6;
+  margin: 0.5em 0;
+}
+
+/* Botón de pregunta */
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  color: #464646;
+  border: none;
+  outline: none;
+  font-size: 1.15em;
+  font-family: 'Barlow', sans-serif;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 0;
+  transition: color 0.3s;
+}
+
+.faq-question:hover,
+.faq-toggle:hover {
+  color: #2badba;
+}
+
+/* Signo "+" o "-" */
+.faq-toggle {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #464646;
+  margin-left: 1em;
+}
+
+/* Respuesta */
+.faq-answer {
+  will-change: max-height, opacity, padding;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 6px;
+  font-size: 1em;
+  color: #464646;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  transition:
+    max-height 0.5s ease-in-out,
+    opacity 0.4s ease-in-out,
+    padding-top 0.4s ease-in-out;
+}
+
+.faq-answer.open {
+  max-height: 1000px;
+  opacity: 1;
+  padding-top: 1em;
+}
