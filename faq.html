@@ -46,31 +46,219 @@
         <li><a href="#">Iniciar sesión</a></li>
       </ul>
     </nav>
-  </header>
+    </header>
   <main class="contenido">
     <h1>Dudas frecuentes</h1>
-    <div class="faq-container">
-      <p></p>
-    <div class="faq-list">
-      <div class="faq-item">
-        <button class="faq-question" onclick="togglePanel(this)">¿Qué es CAPICUA?<span class="faq-toggle">+</span></button>
-        <div class="faq-answer">CAPICUA son las siglas de la Comunidad de Aprendizaje y Práctica de Interpretación de Conferencias de Uso Abierto. Es una asociación sin ánimo de lucro fundada para fomentar la cooperación dentro del sector y el empoderamiento laboral, especialmente de cara a los recién egresados.</div>
-      </div>
-      <div class="faq-separator"></div>
-      <div class="faq-item">
-        <button class="faq-question" onclick="togglePanel(this)">¿Cómo puedo inscribirme?<span class="faq-toggle">+</span></button>
-        <div class="faq-answer">Solo debes rellenar el formulario de inscripción. Te escribiremos por correo electrónico lo antes posible para procesarla.</div>
-      </div>
-      <div class="faq-separator"></div>
-      <div class="faq-item">
-        <button class="faq-question" onclick="togglePanel(this)">¿Hay que abonar alguna cuota?<span class="faq-toggle">+</span></button>
-        <div class="faq-answer">No. Tanto la inscripción como la participación en las actividades de CAPICUA son gratuitas.</div>
-      </div>
-      <div class="faq-separator"></div>
-      <div class="faq-item">
-        <button class="faq-question" onclick="togglePanel(this)">¿Qué requisitos debo cumplir para poder inscribirme?<span class="faq-toggle">+</span></button>
-        <div class="faq-answer">Estar en posesión de un título de Máster en Interpretación de Conferencias o similar; o haber cursado, al menos, 12 créditos ECTS de formación en interpretación de conferencias (será imprescindible que en los 12 créditos conste formación en interpretación simultánea); o haber realizado cursos de interpretación simultánea de, al menos, 100 horas; o justificar, al menos, 100 horas de trabajo en interpretación simultánea de conferencias; o haber aprobado algún examen de acreditación oficial para intérpretes.
-   </main>
+    <section class="faq-page">
+        <div class="faq-wrapper">
+            <!-- Menú lateral -->
+            <aside class="faq-sidebar">
+                <ul>
+                    <li><a href="#" data-category="general">General</a></li>
+                    <li><a href="#" data-category="funciona">Cómo funciona</a></li>
+                    <li><a href="#" data-category="departamentos">Departamentos</a></li>
+                    <li><a href="#" data-category="practica">Sesiones de práctica</a></li>
+                    <li><a href="#" data-category="talleres">Talleres</a></li>
+                    <li><a href="#" data-category="directorio">Directorio y contacto</a></li>
+                    <li><a href="#" data-category="otros">Otros</a></li>
+                </ul>
+                </aside>
+        <div class="faq-list">
+            <div class="faq-group" data-category="general">
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Qué es CAPICUA?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">CAPICUA son las siglas de la Comunidad de Aprendizaje y Práctica de Interpretación de Conferencias de Uso Abierto. Es una asociación sin ánimo de lucro fundada para fomentar la cooperación dentro del sector y el empoderamiento laboral, especialmente de cara a los recién egresados.</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Cómo puedo inscribirme?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Solo debes rellenar el formulario de inscripción. Te escribiremos por correo electrónico lo antes posible para procesarla.</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Hay que abonar alguna cuota?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">No. Tanto la inscripción como la participación en las actividades de CAPICUA son gratuitas.</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Qué requisitos debo cumplir para poder inscribirme?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Estar en posesión de un título de Máster en Interpretación de Conferencias o similar; o haber cursado, al menos, 12 créditos ECTS de formación en interpretación de conferencias (será imprescindible que en los 12 créditos conste formación en interpretación simultánea); o haber realizado cursos de interpretación simultánea de, al menos, 100 horas; o justificar, al menos, 100 horas de trabajo en interpretación simultánea de conferencias; o haber aprobado algún examen de acreditación oficial para intérpretes.</div>
+        </div>
+            <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Necesito la nacionalidad española?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">No. No es necesario contar con la nacionalidad española.</div>
+        </div>
+        <div class="faq-separator"></div>
+        </div>
+         
+        <div class="faq-group" data-category="funciona">
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Qué ventajas tiene ser miembro de CAPICUA?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Podrás participar en las prácticas de interpretación de los departamentos lingüísticos y formar parte de los grupos de WhatsApp, incluido el grupo de Asuntos laborales. También podrás acudir a los talleres formativos y las actividades informales, que están abiertos a cualquier persona, sea o no miembro de la asociación</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Cómo puedo informarme de las actividades?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">A través del grupo de WhatsApp general de CAPICUA y de nuestras redes sociales: @capicuainterpretes en Instagram y @capicuainterp en Twitter.</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Cómo puedo formar parte de los grupos de WhatsApp?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Debes ser miembro de la asociación. Después de formalizar tu inscripción, te pediremos tu número de teléfono para, si quieres, añadirte a los grupos de WhatsApp.</div>
+        </div>
+            <div class="faq-separator"></div>
+            </div>
+            <div class="faq-group" data-category="departamentos">
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Qué es un departamento en CAPICUA?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Llamamos departamento a cada uno de los grupos lingüísticos de la asociación y al grupo de Asuntos Laborales. Cada departamento está gestionado por una directora, encargada de preparar, programar y gestionar las sesiones de práctica. </br>
+                Actualmente, CAPICUA cuenta con nueve departamentos: español (Enrique Hernández Pérez), inglés (María Merino Caballero), francés (Matilde Martínez Barraca), alemán (María Gómez Regalado), italiano (Candela Marcos Fuentevilla), gallego (Aldara Suárez García), portugués (Bernat Aranda), catalán (Bernat Aranda) y Asuntos Laborales (María Merino Caballero).</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿De cuántos departamentos puedo ser miembro?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">De todos los que quieras. No hay límite.</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Qué es el departamento de Asuntos laborales?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Es un grupo de WhatsApp en el que los miembros de la asociación pueden compartir oportunidades laborales y consultar sus dudas sobre aspectos profesionales.</div>
+        </div>
+        <div class="faq-separator"></div>
+            </div>
+            <div class="faq-group" data-category="practica">
+                <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Cómo funcionan las sesiones de práctica?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Antes de la sesión: aproximadamente cada seis semanas publicamos un calendario orientativo, tanto en redes sociales como en el grupo de WhatsApp. Cada semana están previstas una o dos sesiones, en función de los idiomas. </br>La semana de la sesión: la directora de cada departamento suele hacer una consulta dentro de su propio grupo para fijar un día y una franja horaria para la sesión que convenga al mayor número de miembros posible. Enviará el enlace de la reunión y subirá a la carpeta de Drive los materiales necesarios para la interpretación: en un primer documento, enlace al vídeo, reparto de tiempos, contexto, y glosario, si procede; en el segundo, la transcripción del discurso. </br>Durante la sesión: tienen una duración aproximada de una hora y la mecánica suele ser similar en todas: arranca con la presentación del tema y del glosario, así como cualquier otra indicación pertinente para la sesión. </br>A continuación, se asignan las parejas para la interpretación. Se abandona la sala principal y cada intérprete contacta con su pareja (normalmente por WhatsApp). El primero interpreta su fragmento y el segundo escucha y contrasta su discurso con la transcripción para, seguidamente, invertir los papeles. Cada parte dura unos 10-15 minutos. Finalmente, se ofrece feedback u otros comentarios pertinentes sobre la prestación de la otra persona. </br>De vuelta a la reunión principal (se accede con el mismo enlace), se ponen en común impresiones, dudas o reflexiones sobre el discurso. También es posible hacer sugerencias sobre futuros temas, aspectos que trabajar, etc.</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Cómo puedo inscribirme en las sesiones de práctica?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">No es necesario inscribirse. Sin embargo, a veces las directoras de los departamentos hacen una encuesta por WhatsApp para decidir la fecha y la hora de la sesión. El voto en esa encuesta servirá como confirmación de asistencia.</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Cuándo se celebran las sesiones de práctica?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Las semanas en las que se organizará cada sesión se anunciarán con antelación por el grupo general de WhatsApp y por redes sociales. El día y hora exactos se comunicarán la misma semana de la práctica por el grupo del departamento. En función de la disponibilidad de la directora, será ella quien decida la fecha o abrirá una votación para conocer las preferencias de los asistentes. Se intentará en la medida de lo posible ofrecer una variedad de horarios.</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Con cuánta antelación se anuncian las sesiones de práctica?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">El calendario general de prácticas, es decir, la semana en la que se celebrará la sesión, se anunciará periódicamente y con bastante antelación por el grupo general de WhatsApp y por redes sociales. La fecha y hora exacta se comunicará la misma semana de la práctica en el grupo del departamento</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Dónde se celebran las sesiones de práctica?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Se organizan en línea para facilitar la participación del mayor número posible de miembros. Normalmente, se realizan a través de Google Meet, aunque en ocasiones especiales se pueden organizar por Zoom para intérpretes. El enlace de la sesión lo enviará la directora del departamento por el grupo justo antes de empezar. Durante la práctica, se pedirá a los participantes que usen otro medio para ponerse en contacto con su pareja y proceder a la interpretación. Se suele recomendar la función de videollamadas de WhatsApp.</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Hacia qué lengua se interpreta?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Todos los departamentos, a excepción del de español, prevén interpretaciones hacia el español. Aun así, si algún participante desea interpretar hacia otra lengua, es libre de hacerlo, aunque tendrá que buscar a otro capacitado para corregir su prestación. </br>En el departamento de español, se puede interpretar hacia cualquier lengua. Se tendrá que comunicar con antelación la combinación para que la directora pueda organizar las parejas.</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Dónde puedo encontrar la carpeta del departamento?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">En la descripción del grupo de WhatsApp del departamento. Allí encontrarás los materiales de todas las prácticas anteriores.</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">No podré acudir a una sesión a la que iba a asistir. ¿Tengo que notificar a alguien?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">No es necesario, aunque, si votaste en la encuesta y finalmente no puedes acudir, las directoras te agradecerán de que les avises para que no te tengan en cuenta a la hora de formar las parejas.</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Qué diferencia hay entre las prácticas síncronas y las asíncronas?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Las prácticas síncronas son en directo y las asíncronas no. En las síncronas, la directora propone un día y hora para practicar el discurso a través de Meet con el resto de intérpretes. En las prácticas asíncronas, la interpretación es individual y fuera del horario fijado. La grabación se envía a otra persona para que la corrija y viceversa.</div>
+        </div>
+                <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">No puedo ir a una sesión síncrona en directo. ¿Puedo practicar de alguna otra forma?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Sí. Puedes hacerlo de manera asíncrona o escribir por el grupo para quedar con otros socios para practicar en otro momento.</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Qué es una sesión de práctica especial?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Es una sesión en la que se practica en torno a una temática concreta, sin distinguir combinaciones lingüísticas. Además, se reserva tiempo para compartir consejos y para el debate. Se organizan cada 4 meses. Algunos ejemplos de sesiones especiales que hemos organizado hasta el momento incluyen la interpretación turística, la interpretación sanitaria o un simulacro para los exámenes de acreditación de la UE.</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Qué es la plantilla de corrección? ¿Dónde puedo encontrarla?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Es el documento que utilizamos en CAPICUA para evaluar las interpretaciones. A través de una serie de preguntas, la persona evaluadora podrá examinar, principalmente, el contenido, la expresión y la presentación de la interpretación. Se estructura en 3 partes: cuadrante de errores (omisiones, falsos sentidos, contrasentidos…), valoración general y propuesta de mejora, y preguntas sobre contenido, expresión y presentación. Se encuentra en la carpeta de Drive de cada departamento lingüístico.</div>
+        </div>
+        <div class="faq-separator"></div>
+            </div>
+        
+        <div class="faq-group" data-category="talleres">
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Dónde se anuncian los talleres?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Por el grupo de WhatsApp y en nuestras redes sociales</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Cómo puedo inscribirme en los talleres?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">No es necesario inscribirse. Puede acudir cualquier persona a través del enlace que compartimos, normalmente el mismo día del taller, por el grupo de WhatsApp y nuestras redes sociales.</div>
+        </div>
+            <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Son gratuitos los talleres?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Sí. La participación en todas las actividades de CAPICUA es gratuita.</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Puedo asistir a los talleres sin ser miembro de CAPICUA?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Sí. Puede asistir cualquier persona.</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Se graban los talleres?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">No. Por ahora, no contemplamos grabarlos.</div>
+        </div>
+        <div class="faq-separator"></div>
+            </div>
+        
+        <div class="faq-group" data-category="directorio">
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Qué es el directorio de miembros?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Es una lista en la que aparecen los datos de contacto de los miembros de CAPICUA. Tiene carácter voluntario: solo pertenecen a ella quienes lo hayan solicitado. En el directorio aparecen el nombre, el correo electrónico, el teléfono, la ciudad y la combinación lingüística para interpretación y para traducción.</div>
+        </div>
+                <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Dónde puedo encontrar el directorio?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">En la descripción del grupo general de WhatsApp.</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Cómo puedo inscribirme en el directorio?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Envíanos un correo en el que incluyas tus datos de contacto (teléfono y correo electrónico), ciudad y combinación lingüística (de traducción e interpretación).</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Dónde está el mapa de miembros?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">En la descripción del grupo general de WhatsApp.</div>
+        </div>
+                <div class="faq-separator"></div>
+            </div>
+        
+        <div class="faq-group" data-category="otros">   
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Se crearán más departamentos lingüísticos?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Existe la posibilidad. Es necesario que un mínimo de 5 miembros lo solicite y que contemos con una persona de confianza para dirigirlo.</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Cómo se consiguen los certificados de participación en prácticas?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Tras haber participado en 10 sesiones de práctica de interpretación, incluidas las especiales, pero no los talleres.</div>
+        </div>
+        <div class="faq-separator"></div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="togglePanel(this)">¿Puedo solicitar certificados de asistencia a los talleres?<span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Sí,solo tienes que escribirnos por correo electrónico.</div>
+        </div>
+    </div>
+        </section>
+    </main>
 <script src="script.js"></script>
 </body>
 </html>
