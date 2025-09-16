@@ -82,9 +82,8 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       const btn = document.getElementById("hero-btn");
       if (btn) {
-        btn.style.opacity = "1";
+        btn.classList.add("show");
         btn.style.pointerEvents = "auto";
-        btn.classList.add("pop-in");
       }
     }
   }
@@ -124,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
   scrollAnimatedElements.forEach(el => scrollAnimationObserver.observe(el));
 
   // Animate link cards with .pop-in
-  const popUps = document.querySelectorAll('.pop-in');
+  const popUps = document.querySelectorAll('.pop-in:not(#hero-btn)');
   const popUpObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
