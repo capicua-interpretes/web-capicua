@@ -19,11 +19,10 @@
 
 h1 {
   font-family: 'DomaineDisplayBold', serif;
-  font-size: 2.4em;
+  font-size: 3em;
   font-weight: bold;
-  padding: 0.2em 0;
+  padding: 0.4em 0;
   margin: 0;
-  letter-spacing: 0.03em;
   position: relative;
   text-align: center;
 }
@@ -41,15 +40,23 @@ a:hover {
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
   overflow-x: hidden;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background: #f7fafc;
   font-family: 'Barlow', sans-serif;
   color: #464646;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+}
+
+main {
+  flex: 1;
 }
 
 main > section {
@@ -671,7 +678,6 @@ main > section {
 .faq-list {
   display: flex;
   flex-direction: column;
-  gap: 0.2em;
   max-width: 700px;
   margin: 0 auto;
   margin-top: 2em;
@@ -679,14 +685,13 @@ main > section {
 
 .faq-item {
   position: relative;
-  padding-bottom: 0.5em;
 }
 
 .faq-separator {
   width: 100%;
   height: 1px;
   background: #c6c6c6;
-  margin: 0.5em 0;
+  margin: 0.7em 0;
 }
 
 .faq-question {
@@ -1285,27 +1290,20 @@ button[type="submit"]:hover {
 
 
 /*------FAQ PAGE------*/
+.faq-page {
+  padding: 4em 1em;
+
+}
+
 .faq-wrapper {
   display: flex;
   flex-direction: row;
   gap: 2em;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2em 1em;
+  padding: 3em 0;
 }
 
-
-/* Contenedor principal de la página FAQ */
-.faq-page {
-  display: flex;
-  flex-direction: row;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2em 1em;
-  gap: 2em;
-}
-
-/* ===== MENÚ LATERAL ===== */
 .faq-sidebar {
   width: 220px;
   position: sticky;
@@ -1327,7 +1325,7 @@ button[type="submit"]:hover {
 
 .faq-sidebar a {
   text-decoration: none;
-  color: #464646;
+  color: #747474;
   font-size: 1em;
   transition: color 0.3s;
 }
@@ -1338,81 +1336,91 @@ button[type="submit"]:hover {
   font-weight: 500;
 }
 
-/* ===== CONTENIDO DE PREGUNTAS ===== */
 .faq-page .faq-list {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.2em;
   max-width: 800px;
   width: 100%;
   margin-top: 0;
 }
-
-/* Cada pregunta */
-.faq-item {
-  position: relative;
-  padding-bottom: 0.5em;
-}
-
-/* Separador entre preguntas */
-.faq-separator {
-  width: 100%;
-  height: 1px;
-  background: #c6c6c6;
-  margin: 0.5em 0;
-}
-
-/* Botón de pregunta */
-.faq-question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  background: none;
-  color: #464646;
-  border: none;
-  outline: none;
-  font-size: 1.15em;
-  font-family: 'Barlow', sans-serif;
-  text-align: left;
-  cursor: pointer;
-  margin-bottom: 0;
-  transition: color 0.3s;
-}
-
-.faq-question:hover,
-.faq-toggle:hover {
-  color: #2badba;
-}
-
-/* Signo "+" o "-" */
-.faq-toggle {
-  font-size: 1.3em;
-  font-weight: bold;
-  color: #464646;
-  margin-left: 1em;
-}
-
-/* Respuesta */
-.faq-answer {
-  will-change: max-height, opacity, padding;
-  max-height: 0;
+.faq-group {
   opacity: 0;
+  max-height: 0;
   overflow: hidden;
-  padding: 0 6px;
-  font-size: 1em;
-  color: #464646;
-  font-family: 'Barlow', sans-serif;
-  font-weight: 300;
-  transition:
-    max-height 0.5s ease-in-out,
-    opacity 0.4s ease-in-out,
-    padding-top 0.4s ease-in-out;
+  transition: opacity 0.4s ease, max-height 0.5s ease;
+  pointer-events: none;
 }
 
-.faq-answer.open {
-  max-height: 1000px;
+.faq-group.active {
   opacity: 1;
-  padding-top: 1em;
+  max-height: 5000px;
+  pointer-events: all;
+}
+
+
+@media (max-width: 1024px) {
+  .faq-wrapper {
+    flex-direction: column;
+    padding: 2em 1em;
+  }
+
+  .faq-sidebar {
+    position: static;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    justify-content: center;
+  }
+
+  .faq-sidebar ul {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2em;
+    justify-content: center;
+  }
+
+  .faq-sidebar li {
+    margin: 0;
+  }
+
+  .faq-sidebar a {
+    padding: 0.5em 1em;
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 600px) {
+  .faq-page {
+    padding: 2em 1em;
+  }
+
+  .faq-question {
+    font-size: 1em;
+  }
+
+  .faq-toggle {
+    font-size: 1.2em;
+  }
+
+  .faq-answer {
+    font-size: 0.95em;
+    padding: 0 4px;
+  }
+
+  .faq-sidebar ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .faq-sidebar a {
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 10px;
+  }
 }
