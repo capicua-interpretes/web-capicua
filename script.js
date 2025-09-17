@@ -182,24 +182,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //FAQ
 document.querySelectorAll('.faq-sidebar a').forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
 
-      const category = this.dataset.category;
+    const category = this.dataset.category;
 
-      document.querySelectorAll('.faq-group').forEach(group => {
-        if (group.dataset.category === category) {
-          group.style.display = 'block';
-        } else {
-          group.style.display = 'none';
-        }
-      });
-    });
-  });
-
-  // Mostrar todo al cargar por primera vez
-  window.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.faq-group').forEach(group => {
-      group.style.display = 'block';
+      if (group.dataset.category === category) {
+        group.classList.add('active');
+      } else {
+        group.classList.remove('active');
+      }
     });
   });
+});
+
+// Al cargar la página, muestra todos los grupos o solo uno si prefieres
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.faq-group').forEach(group => {
+    group.classList.add('active');
+  });
+});
+
+
