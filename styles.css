@@ -27,6 +27,14 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 3em;
+  color: #464646;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
 a {
   color: #2badba;
   text-decoration: none;
@@ -47,7 +55,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: #f7fafc;
+  background: linear-gradient(180deg, #edf2f7 0%, #f7fafc 100%);
   font-family: 'Barlow', sans-serif;
   color: #464646;
   margin: 0;
@@ -63,9 +71,7 @@ main > section {
   padding-inline: 6vw;
 }
 
-.contenido {
-  background: linear-gradient(180deg, #edf2f7 0%, #f7fafc 100%);
-}
+
 
 /* ---   NAVIGATION BAR   --- */
 .navbar {
@@ -256,9 +262,7 @@ main > section {
   margin: 0 auto;
   padding: 0 1em;
 }
-.about-section h2 {
-  font-size: 3em
-}
+
 .about-desc {
   font-family: 'Barlow', sans-serif;
   font-size: 1.15em;
@@ -299,12 +303,7 @@ main > section {
   padding-bottom: 4em;
   text-align: center;
 }
-.links-section h2 {
-  font-family: 'Barlow', sans-serif;
-  font-size: 3em;
-  color: #464646;
-  margin-bottom: 0.2em;
-}
+
 .links-images {
   display: flex;
   justify-content: center;
@@ -405,15 +404,6 @@ main > section {
   background: #fff;
   padding-top: 6em;
   padding-bottom: 6em;
-}
-
-.agenda-section h2 {
-  font-family: 'Barlow', sans-serif;
-  font-size: 3em;
-  color: #464646;
-  margin-bottom: 0.2em;
-  text-align: left;
-  width: 100%;
 }
 
 .agenda-viewall {
@@ -638,8 +628,6 @@ main > section {
   text-align: center;
   padding-top: 3em;
   padding-bottom: 5em;
-  padding-left: 6vw;
-  padding-right: 6vw;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -659,14 +647,6 @@ main > section {
 .faq-section {
   background: #fff;
   padding: 4em 6vw 4em 6vw;
-}
-
-.faq-section h2 {
-  font-family: 'Barlow', sans-serif;
-  font-size: 3em;
-  color: #464646;
-  margin-bottom: 1em;
-  text-align: center;
 }
 
 .faq-container {
@@ -836,81 +816,6 @@ main > section {
   font-size: 0.7em;
   font-weight: 300;
 }
-
-/* ---   FORMULARIO   --- */
-.formulario {
-  background: linear-gradient(180deg, #edf2f7 0%, #f7f7f7 100%);
-}
-
-form {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 30px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-label {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: 600;
-  color: #333;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  transition: border-color 0.2s;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-  border-color: #007acc;
-  outline: none;
-}
-
-fieldset {
-  border: none;
-  margin-bottom: 20px;
-}
-
-legend {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-input[type="checkbox"] {
-  margin-right: 8px;
-}
-
-textarea {
-  resize: vertical;
-}
-
-button[type="submit"] {
-  background-color: #007acc;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button[type="submit"]:hover {
-  background-color: #005ea6;
-}
-
 
 /* ---   MEDIA QUERIES   --- */
 @media screen and (max-width: 768px) {
@@ -1215,54 +1120,48 @@ button[type="submit"]:hover {
 }
 
 /* ---   FORMULARIO   --- */
-.formulario {
-  background: linear-gradient(180deg, #edf2f7 0%, #f7f7f7 100%);
-}
-
 form {
-  max-width: 600px;
+  max-width: 800px;
   margin: 40px auto;
   padding: 30px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 label {
   display: block;
-  margin-bottom: 6px;
-  font-weight: 600;
-  color: #333;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  font-weight: 400;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 35px;
+  border: none;
+  border-radius: 3px;
   box-sizing: border-box;
-  transition: border-color 0.2s;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  font-family: 'Barlow';
+  font-weight: 300;
+  color: #464646;
+  font-size: 1em;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-  border-color: #007acc;
+  border-color: #747474;
   outline: none;
 }
+
 
 fieldset {
   border: none;
   margin-bottom: 20px;
-}
-
-legend {
-  font-weight: bold;
-  margin-bottom: 10px;
+  padding: 0;
 }
 
 input[type="checkbox"] {
@@ -1272,29 +1171,75 @@ input[type="checkbox"] {
 textarea {
   resize: vertical;
 }
+.form-button {
+  text-align: center;
+  margin-top: 1.5em;
+}
 
 button[type="submit"] {
-  background-color: #007acc;
+  background-color: #2badba;
   color: white;
-  padding: 12px 20px;
+  padding: 12px 50px;
   border: none;
-  border-radius: 5px;
-  font-weight: bold;
+  border-radius: 2px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 button[type="submit"]:hover {
-  background-color: #005ea6;
+  background-color: #228a8a;
 }
 
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+  font-family: 'Barlow', sans-serif;
+}
+
+.checkbox-option label {
+  cursor: pointer;
+  color: #464646;
+  font-weight: 300;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #2badba;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #2badba;
+  border-color: #2badba;
+}
+
+input[type="checkbox"]:checked::after {
+  content: '✔';
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /*------FAQ PAGE------*/
 .faq-page {
   padding: 4em 1em;
-
 }
-
 .faq-wrapper {
   display: flex;
   flex-direction: row;
