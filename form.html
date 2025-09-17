@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulario de inscripción</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="nav-left">
+        <a href="/index.html" class="nav-home">
+          <img src="images/solido.svg" alt="Inicio"/>
+          <span class="nav-title">
+            <span class="nav-title-bold">CAPICUA</span><br />
+            <span class="nav-title-small">intérpretes</span>
+          </span>
+        </a>
+      </div>
+      <button class="nav-hamburger" onclick="toggleNav()" aria-label="Abrir menú">
+        <span class="nav-hamburger-bar"></span>
+        <span class="nav-hamburger-bar"></span>
+        <span class="nav-hamburger-bar"></span>
+      </button>
+      <ul class="nav-links nav-right">
+        <li class="dropdown">
+          <a href="#">Quiénes somos</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">La asociación</a></li>
+            <li><a href="#">El equipo</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Qué hacemos</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Prácticas</a></li>
+            <li><a href="#">Talleres</a></li>
+            <li><a href="#">Actividades</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Recursos</a></li>
+        <li><a href="faq.html">Dudas frecuentes</a></li>
+        <li><a href="#">Iniciar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido">
+    <section class="form-page">
+      <h2>Inscripción</h2>
+      <div class="form-wrapper">
+        <form action="https://formspree.io/f/xldwknzl" method="POST">
+        <fieldset>
+          <label>Datos personales</label>
+
+          <input 
+            type="text" 
+            id="nombre" 
+            name="Nombre" 
+            placeholder="Nombre y apellidos (y pronombres, si quieres)" 
+            required>
+
+          <input 
+            type="email" 
+            id="email" 
+            name="Correo electrónico" 
+            placeholder="Dirección de correo electrónico" 
+            required>
+
+          <input 
+            type="text" 
+            id="universidad" 
+            name="Universidad y promoción" 
+            placeholder="Universidad y promoción">
+        </fieldset>
+        <fieldset>
+            <label>Departamentos en los que quieres participar</label>
+            <div class="checkbox-option">
+              <input type="checkbox" id="dep-espanol" name="Departamentos[]" value="Español">
+              <label for="dep-espanol">Español (español > lengua extranjera)</label>
+            </div>
+
+            <div class="checkbox-option">
+              <input type="checkbox" id="dep-ingles" name="Departamentos[]" value="Inglés">
+              <label for="dep-ingles">Inglés (inglés > español)</label>
+            </div>
+
+            <div class="checkbox-option">
+              <input type="checkbox" id="dep-frances" name="Departamentos[]" value="Francés">
+              <label for="dep-frances">Francés (francés > español)</label>
+            </div>
+
+            <div class="checkbox-option">
+              <input type="checkbox" id="dep-aleman" name="Departamentos[]" value="Alemán">
+              <label for="dep-aleman">Alemán (alemán > español)</label>
+            </div>
+
+            <div class="checkbox-option">
+              <input type="checkbox" id="dep-italiano" name="Departamentos[]" value="Italiano">
+              <label for="dep-italiano">Italiano (italiano > español)</label>
+            </div>
+
+            <div class="checkbox-option">
+              <input type="checkbox" id="dep-gallego" name="Departamentos[]" value="Gallego">
+              <label for="dep-gallego">Gallego (gallego > español)</label>
+            </div>
+
+            <div class="checkbox-option">
+              <input type="checkbox" id="dep-portugues" name="Departamentos[]" value="Portugués">
+              <label for="dep-portugues">Portugués (portugués > español)</label>
+            </div>
+
+            <div class="checkbox-option">
+              <input type="checkbox" id="dep-catalan" name="Departamentos[]" value="Catalán">
+              <label for="dep-catalan">Catalán (catalán > español)</label>
+            </div>
+
+            <div class="checkbox-option">
+              <input type="checkbox" id="dep-laborales" name="Departamentos[]" value="Asuntos laborales">
+              <label for="dep-laborales">Asuntos laborales</label>
+            </div>
+        </fieldset><br>
+
+        <label for="comentarios">¿Nos quieres contar algo más?</label>
+        <textarea id="comentarios" name="Comentarios" rows="4"></textarea><br><br>
+        <div class="form-button">
+          <button type="submit">Enviar</button>
+        </div> 
+        </form>
+      </div>
+    </section>
+  </main>  
+  <footer class="footer">
+    <div class="footer-row footer-row2">
+      <a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="footer-social"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="footer-social"><i class="fab fa-linkedin"></i></a>
+      <a href="#" class="footer-social"><i class="fa fa-envelope"></i></a>
+    </div>
+    <div class="footer-row footer-row3">
+      <span class="footer-copyright">© 2025 CAPICUA intérpretes. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
