@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulario de inscripción</title>
+  <link rel="stylesheet" href="formstyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+  </header>
+  <main class="contenido">
+    <section class="form-wrapper">
+  <div class="form-container">
+    <div class="form-header">
+      <div class="form-logo">
+        <img src="images/solido.svg" alt="Inicio" />
+        <span class="nav-title">
+          <span class="nav-title-bold">CAPICUA</span><br />
+          <span class="nav-title-small">intérpretes</span>
+        </span>
+      </div>
+      <div class="form-socials">
+        <a href="https://www.instagram.com/capicuainterpretes/" class="form-social"><i class="fab fa-instagram"></i></a>
+        <a href="x.com/capicuainterp" class="form-social"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com/in/capicuainterpretes" class="form-social"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:capicuainterpretes@gmail.com" class="form-social"><i class="fa fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="form-content">
+      <div class="form-left">
+        <h1>¡Hola!</h1>
+        <p>Te estábamos esperando.</p>
+        <img src="images/hero.png" alt="Hero" id="hero-img" />
+      </div>
+      <div class="form-right">
+        <form action="https://formspree.io/f/xldwknzl" method="POST">
+        <fieldset>
+          <label>Datos personales</label>
+
+          <input 
+            type="text" 
+            id="nombre" 
+            name="Nombre" 
+            placeholder="Nombre y apellidos (y pronombres, si quieres)" 
+            required>
+
+          <input 
+            type="email" 
+            id="email" 
+            name="Correo electrónico" 
+            placeholder="Dirección de correo electrónico" 
+            required>
+
+          <input 
+            type="text" 
+            id="universidad" 
+            name="Universidad y promoción" 
+            placeholder="Universidad y promoción">
+        </fieldset>
+        <fieldset>
+            <label>Departamentos en los que quieres participar</label>
+            <div class="checkbox-grid">
+              <div class="checkbox-option">
+                <input type="checkbox" id="dep-espanol" name="Departamentos[]" value="Español">
+                <label for="dep-espanol">Español (ES > lengua extranjera)</label>
+              </div>
+
+              <div class="checkbox-option">
+                <input type="checkbox" id="dep-ingles" name="Departamentos[]" value="Inglés">
+                <label for="dep-ingles">Inglés (EN > ES)</label>
+              </div>
+
+              <div class="checkbox-option">
+                <input type="checkbox" id="dep-frances" name="Departamentos[]" value="Francés">
+                <label for="dep-frances">Francés (FR > ES)</label>
+              </div>
+
+              <div class="checkbox-option">
+                <input type="checkbox" id="dep-aleman" name="Departamentos[]" value="Alemán">
+                <label for="dep-aleman">Alemán (DE > ES)</label>
+              </div>
+
+              <div class="checkbox-option">
+                <input type="checkbox" id="dep-italiano" name="Departamentos[]" value="Italiano">
+                <label for="dep-italiano">Italiano (IT > ES)</label>
+              </div>
+
+              <div class="checkbox-option">
+                <input type="checkbox" id="dep-gallego" name="Departamentos[]" value="Gallego">
+                <label for="dep-gallego">Gallego (GL > ES)</label>
+              </div>
+
+              <div class="checkbox-option">
+                <input type="checkbox" id="dep-portugues" name="Departamentos[]" value="Portugués">
+                <label for="dep-portugues">Portugués (PT > ES)</label>
+              </div>
+
+              <div class="checkbox-option">
+                <input type="checkbox" id="dep-catalan" name="Departamentos[]" value="Catalán">
+                <label for="dep-catalan">Catalán (CAT > ES)</label>
+              </div>
+
+              <div class="checkbox-option">
+                <input type="checkbox" id="dep-laborales" name="Departamentos[]" value="Asuntos laborales">
+                <label for="dep-laborales">Asuntos laborales</label>
+              </div>
+            </div>
+        </fieldset><br>
+
+        <label for="comentarios">¿Nos quieres contar algo más?</label>
+        <textarea id="comentarios" name="Comentarios" rows="4"></textarea><br><br>
+        <div class="form-button">
+          <button type="submit">Enviar</button>
+        </div> 
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>  
+</body>
+</html>
