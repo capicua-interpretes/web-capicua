@@ -682,7 +682,7 @@ main > section {
   color: #464646;
   border: none;
   outline: none;
-  font-size: 1.15em;
+  font-size: 1em;
   font-family: 'Barlow', sans-serif;
   text-align: left;
   cursor: pointer;
@@ -1440,6 +1440,7 @@ input[type="checkbox"]:checked::after {
 @media (max-width: 1024px) {
   .faq-wrapper {
     flex-direction: column;
+    padding: 0 0 2em 0;
   }
 
   .faq-sidebar {
@@ -1472,7 +1473,7 @@ input[type="checkbox"]:checked::after {
     padding: 0.5em 0.8em;
     font-size: 0.95em;
     text-decoration: none;
-    background-color: #f3f3f3;
+    background-color: white;
     border: 1px solid #ddd;
     border-radius: 999px;
     color: #333;
@@ -1505,12 +1506,12 @@ input[type="checkbox"]:checked::after {
 
 .faq-sidebar::before {
   left: 0;
-  background: linear-gradient(to right, white 0%, transparent 100%);
+  background: linear-gradient(to right, #edf2f7 0%, transparent 100%);
 }
 
 .faq-sidebar::after {
   right: 0;
-  background: linear-gradient(to left, white 0%, transparent 100%);
+  background: linear-gradient(to left, #edf2f7 0%, transparent 100%);
 }
 
 }
