@@ -6,6 +6,7 @@
   <title>Dudas frecuentes | CAPICUA</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
 </head>
 <body>
@@ -46,24 +47,59 @@
         <li><a href="#">Iniciar sesión</a></li>
       </ul>
     </nav>
+
     </header>
-  <main class="contenido">
-    <section class="faq-page">
-        <h1>Dudas frecuentes</h1>
-        <div class="faq-wrapper">
-            <!-- Menú lateral -->
-            <aside class="faq-sidebar animate-on-scroll">
+    <main class="contenido">
+        <section class="faq-page">
+            <h1>Dudas frecuentes</h1>
+            <div class="faq-wrapper">
+                <aside class="faq-sidebar" id="faq-sidebar">
                 <ul>
-                    <li><a href="#" data-category="inscripción">Inscripción</a></li>
-                    <li><a href="#" data-category="funciona">Cómo funciona</a></li>
-                    <li><a href="#" data-category="departamentos">Departamentos</a></li>
-                    <li><a href="#" data-category="practica">Sesiones de práctica</a></li>
-                    <li><a href="#" data-category="talleres">Talleres</a></li>
-                    <li><a href="#" data-category="directorio">Directorio y contacto</a></li>
-                    <li><a href="#" data-category="otros">Otros</a></li>
+                    <li>
+                        <a href="#" data-category="inscripción">
+                        <i class="ph-fill ph-pen-nib"></i>
+                        Inscripción
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="funciona">
+                        <i class="ph-fill ph-gear"></i>
+                        Cómo funciona
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="departamentos">
+                        <i class="ph-fill ph-users-three"></i>
+                        Departamentos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="practica">
+                        <i class="ph-fill ph-headphones"></i>
+                        Sesiones de práctica
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="talleres">
+                        <i class="ph-fill ph-pencil-circle"></i>
+                        Talleres
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="directorio">
+                        <i class="ph-fill ph-address-book"></i>
+                        Directorio y contacto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="otros">
+                        <i class="ph-fill ph-user-plus"></i>
+                        Otros
+                        </a>
+                    </li>
                 </ul>
-                </aside>
-        <div class="faq-list animate-on-scroll">
+           </aside>
+        <div class="faq-list">
             <div class="faq-group" data-category="inscripción">
                 <div class="faq-item">
             <button class="faq-question" onclick="togglePanel(this)">¿Cómo puedo inscribirme?<span class="faq-toggle">+</span></button>
@@ -252,7 +288,7 @@
             <div class="faq-answer">Sí,solo tienes que escribirnos por correo electrónico.</div>
         </div>
     </div>
-        </section>
+    </section>
     </main>
     <footer class="footer">
         <div class="footer-row footer-row2">
@@ -265,6 +301,6 @@
             <span class="footer-copyright">© 2025 CAPICUA intérpretes. Todos los derechos reservados.</span>
         </div>
     </footer>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
